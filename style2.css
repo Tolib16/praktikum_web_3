@@ -1,0 +1,30 @@
+
+.topbox{
+    background-color: orange;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: solid;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.box{
+    height: 160px;
+    border: solid ;
+}
+.box:nth-child(1){
+width: 180px;
+background-color: yellow;
+}
+.box:nth-child(2){
+    width: 1300px;
+}
+.merah{
+    background-color: red;
+}
+.oren{
+    background-color: orange;
+}
