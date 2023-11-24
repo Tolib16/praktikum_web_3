@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox 1t</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: palevioletred;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header, footer{
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            height: 70px;
+        }
+
+        main{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+            height: 500px;
+        }
+
+        aside{
+            background-color: aquamarine;
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        article{
+            background-color: indianred;
+            flex: 3;
+            display: flex;
+            
+            align-items: end;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        img{
+            padding-left: 100px;
+            height: 200px;
+            width: 200px;
+            align-items: end;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Tampilan Headaer</header>
+        
+        <main>
+            <aside>Tampilan Aside</aside>
+                
+            <article>
+                <img src="images/gambar5.jpg" alt="">
+                <img src="images/gambar3.jpg" alt="">
+                <img src="images/gambar6.jpg" alt="">
+            </article>
+        </main>
+
+        <footer>Tampilan Footer</footer>
+    </div>
+</body>
+</html>
