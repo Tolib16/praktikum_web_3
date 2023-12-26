@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function image_picker(){
+            const list_image = ["ayam.png", "babi.png", "jerapah.png", "ular.png", "kambing.png"];
+            let pilihan = document.getElementById("opsi").value;
+
+            if( pilihan == "ayam" ){
+                let select = list_image[0]; //ayam.png
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+
+            if( pilihan == "babi"){
+                let select = list_image[1]; //babi.png
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+
+            if( pilihan == "jerapah"){
+                let select = list_image[2]; //jerapah.png
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+
+            if( pilihan == "ular" ){
+                let select = list_image[3]; //ular.png
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+            
+            if( pilihan == "kambing" ){
+                let select = list_image[4]; //kambing.png
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+
+        }
+    </script>
+    <style>
+        .container {
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Picker</h1>
+
+    <select name="" id="opsi" onchange="image_picker()">
+        <option value="">Pilih Gambar</option>
+        <option value="ayam"> Ayam </option>
+        <option value="babi"> Babi </option>
+        <option value="jerapah"> Jerapah </option>
+        <option value="ular"> Ular </option>
+        <option value="kambing"> Kambing </option>
+    </select>
+
+    <div class="container">
+        <img id="gambar">
+    </div>
+
+</body>
+</html>
